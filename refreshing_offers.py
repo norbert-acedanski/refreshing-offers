@@ -43,11 +43,14 @@ class RefreshingSprzedajemy():
             my_offers.refresh_offers()
             if page != number_of_pages:
                 my_offers.go_to_next_page()
-        
 
-if __name__ == "__main__":
+def refresh_offers_from_sprzedajemy():
     refreshing_sprzedajemy_offers = RefreshingSprzedajemy()
     refreshing_sprzedajemy_offers.get_credentials()
     refreshing_sprzedajemy_offers.launch_page()
     refreshing_sprzedajemy_offers.login()
     refreshing_sprzedajemy_offers.refresh_offers()
+        
+
+if __name__ == "__main__":
+    refresh_offers_from_sprzedajemy()
