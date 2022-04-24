@@ -26,6 +26,7 @@ class RefreshingSprzedajemy():
         login_page.set_email(self.email)
         login_page.set_password(self.password)
         login_page.click_login()
+        del self.password
         page_title = self.driver.title
         if "Sprzedajemy.pl" not in page_title or "Twoje ogłoszenia" not in page_title:
             raise NoSuchWindowException("It appears, that the site is not correct")
