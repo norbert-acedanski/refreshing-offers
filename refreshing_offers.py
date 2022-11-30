@@ -5,6 +5,7 @@ from login_page import LoginSprzedajemy, MyOffersSprzedajemy
 from getpass import getpass
 import time
 
+
 class RefreshingSprzedajemy():
     sprzedajemy_url = "https://sprzedajemy.pl/Twoje-Oferty"
 
@@ -44,6 +45,7 @@ class RefreshingSprzedajemy():
             my_offers.refresh_offers()
             if page != number_of_pages:
                 my_offers.go_to_next_page()
+
 
 def refresh_offers_from_sprzedajemy():
     refreshing_sprzedajemy_offers = RefreshingSprzedajemy()

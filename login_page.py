@@ -3,6 +3,7 @@ class LoginSprzedajemy:
     textbox_password_xpath = "//input[@type='password']"
     button_login_xpath = "//button[@type='submit']"
     button_logout_xpath = "//a[@class='logout']"
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -20,6 +21,7 @@ class LoginSprzedajemy:
     def click_logout(self):
         self.driver.find_element_by_xpath(self.button_logout_xpath).click()
 
+
 class MyOffersSprzedajemy:
     button_cookies_xpath = "//button [@id='didomi-notice-agree-button']"
     button_next_page_xpath = "//li[@class='next']"
@@ -27,6 +29,7 @@ class MyOffersSprzedajemy:
     number_of_offers_in_a_page = "//input[@name='limit']"
     checkbox_check_all_xpath = "//a[@class='selectDeselectAll'] /span"
     button_refresh_xpath = "//div[@class='theButton theButtonNoBg theButtonRefresh'] /a"
+
     def __init__(self, driver):
         self.driver = driver
     
