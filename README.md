@@ -19,8 +19,8 @@ pip install -r requirements.txt
 ### Working with refreshing-offers:
 1. Run the script.
 2. Enter an email for your account.
-3. Enter a password for your account (don't worry, it is not stored, and deleted, after the login is succesfull).
-4. Script should start a chrome browser, log in with the credentials and refresh offers in all pages.
+3. Enter a password for your account (don't worry, it is not stored, but deleted, after the login is successful).
+4. Script should start a Chrome browser, log in with the credentials and refresh offers in all pages.
 
 # Usage
 Allows you to not spend precious time on refreshing your offers.
